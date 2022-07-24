@@ -9,7 +9,9 @@
         <create-post />
       </div>
       <parent-component /> -->
-        <template-ref />
+        <!-- <template-ref /> -->
+        <click-counter />
+        <hover-counter />
       </div>
     </div>
   </div>
@@ -19,14 +21,18 @@
 // import PostsList from "./components/PostsList.vue";
 // import CreatePost from "./components/CreatePost.vue";
 // import ParentComponent from "./components/Parent.vue";
-import TemplateRef from "./components/TemplateRef.vue";
+// import TemplateRef from "./components/TemplateRef.vue";
+import ClickCounter from "./components/ClickCounter.vue";
+import HoverCounter from "./components/HoverCounter.vue";
 export default {
   name: "App",
   components: {
     // PostsList,
     // CreatePost,
     // ParentComponent,
-    TemplateRef,
+    // TemplateRef,
+    ClickCounter,
+    HoverCounter,
   },
 };
 </script>
