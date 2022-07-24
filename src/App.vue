@@ -1,27 +1,32 @@
 <template>
   <div class="container">
-    <div class="row">
+    <div class="row justify-content-center">
       <div class="col-6">
+        <!-- <div class="col-6">
         <posts-list />
       </div>
       <div class="col-6">
         <create-post />
       </div>
+      <parent-component /> -->
+        <template-ref />
+      </div>
     </div>
   </div>
-  <!-- <parent-component /> -->
 </template>
 
 <script>
-import PostsList from "./components/PostsList.vue";
-import CreatePost from "./components/CreatePost.vue";
+// import PostsList from "./components/PostsList.vue";
+// import CreatePost from "./components/CreatePost.vue";
 // import ParentComponent from "./components/Parent.vue";
+import TemplateRef from "./components/TemplateRef.vue";
 export default {
   name: "App",
   components: {
-    PostsList,
-    CreatePost,
+    // PostsList,
+    // CreatePost,
     // ParentComponent,
+    TemplateRef,
   },
 };
 </script>
