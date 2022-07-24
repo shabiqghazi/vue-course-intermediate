@@ -1,17 +1,26 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <div class="container">
+    <div class="row">
+      <div class="col-6">
+        <posts-list />
+      </div>
+      <div class="col-6">
+        <create-post />
+      </div>
+    </div>
+  </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
-
+import PostsList from "./components/PostsList.vue";
+import CreatePost from "./components/CreatePost.vue";
 export default {
-  name: 'App',
+  name: "App",
   components: {
-    HelloWorld
-  }
-}
+    PostsList,
+    CreatePost,
+  },
+};
 </script>
 
 <style>
