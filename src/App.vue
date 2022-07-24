@@ -1,5 +1,5 @@
 <template>
-  <div class="container">
+  <!-- <div class="container">
     <div class="row">
       <div class="col-6">
         <posts-list />
@@ -8,17 +8,20 @@
         <create-post />
       </div>
     </div>
-  </div>
+  </div> -->
+  <parent-component />
 </template>
 
 <script>
-import PostsList from "./components/PostsList.vue";
-import CreatePost from "./components/CreatePost.vue";
+// import PostsList from "./components/PostsList.vue";
+// import CreatePost from "./components/CreatePost.vue";
+import ParentComponent from "./components/Parent.vue";
 export default {
   name: "App",
   components: {
-    PostsList,
-    CreatePost,
+    // PostsList,
+    // CreatePost,
+    ParentComponent,
   },
 };
 </script>
